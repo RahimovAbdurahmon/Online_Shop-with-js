@@ -1,0 +1,58 @@
+let dataShop = [
+    {
+      id: "id1",
+      img: "imges.api/img1.jpg",
+      name: "Laptop Asus",
+      price: "650",
+      desc: "This computer is working very nice",
+    },
+    {
+      id: "id2",
+      img: "imges.api/img2.jpg",
+      name: "Macbook Pro",
+      price: "1200",
+      desc: "This computer is working very nice",
+    },
+    {
+      id: "id3",
+      img: "imges.api/img3.jpg",
+      name: "Gaming Laptop",
+      price: "900",
+      desc: "This computer is working very nice",
+    },
+    {
+      id: "id4",
+      img: "imges.api/img4.jpg",
+      name: "Macbook Pro+",
+      price: "1000",
+      desc: "This computer is working very nice",
+    },
+    {
+      id: "id5",
+      img: "imges.api/img5.jpg",
+      name: "Macbook Pro G7",
+      price: "2200",
+      desc: "This computer is working very nice",
+    },
+    {
+      id: "id6",
+      img: "imges.api/img6.jpg",
+      name: "Hp Laptop",
+      price: "800",
+      desc: "This computer is working very nice",
+    },
+    {
+      id: "id7",
+      img: "imges.api/img7.jpg",
+      name: "Hp Laptop",
+      price: "1100",
+      desc: "This computer is working very nice",
+    },
+    {
+      id: "id8",
+      img: "imges.api/img8.jpg",
+      name: "Macbook Pro G9",
+      price: "1800",
+      desc: "This computer is working very nice",
+    },
+];

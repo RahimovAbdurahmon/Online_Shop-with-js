@@ -1,0 +1,203 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.saidbar{
+    padding-top: 130px;
+    display: flex;
+    flex-direction: column;
+    background-color: #272c46;
+    width: 100px;
+    font-size: 35px;
+    align-items: center;
+    color: rgb(223, 221, 221);
+    height: 100%;
+    text-align: center;
+    position: fixed;
+    z-index: 1;
+}
+#iconMain{
+    width: 100%;
+    padding: 25px;
+}
+#iconMain:hover{
+    background-color: white;
+    color: #272c46;
+    cursor: pointer;
+    border-right: 2px solid #272c46;
+}
+#iconMainSetting{
+    width: 100%;
+    padding: 25px;
+}
+#iconMainSetting:hover{
+    background-color: white;
+    color: #272c46;
+    cursor: pointer;
+    border-right: 2px solid #272c46;
+}
+#iconChange:hover{
+    color: rgb(218, 214, 214);
+    cursor: pointer;
+}
+.box{
+    display: grid;
+    grid-template-columns: repeat(4, 220px);
+    gap: 40px;
+    justify-content: center;
+    margin-left: 50px;
+}
+
+@media (max-width : 900px) {
+    .box{
+        grid-template-columns: repeat(2, 220px);
+    }
+}
+
+@media (max-width : 500px) {
+    .box{
+        grid-template-columns: repeat(1, 220px);
+    }
+}
+
+.div{
+    border-radius: 5px;
+    border: 2px solid #272c46;
+}
+.div img {
+    width: 100%;
+    border-radius: 4px 4px 0 0;
+}
+.actions{
+    padding: 15px;
+}
+.name{
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+.desc{
+    font-size: 18px;
+    color: #272c46;
+    margin-bottom: 15px;
+}
+.price{
+    font-size: 19px;
+}
+.flex{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-right: 10px;
+}
+#iconEdit{
+    font-size: 22px;
+    color: #272c46;
+    cursor: pointer;
+}
+#iconDelete{
+    color: red;
+    font-size: 22px;
+    cursor: pointer;
+}
+.icons{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.cart-item-laptop{
+    display: flex;
+    border-radius: 5px;
+    border: 2px solid #272c46;
+}
+.shoping-cart-laptop{
+    display: grid;
+    grid-template-columns: repeat(1, 450px);
+    gap: 50px;
+    justify-content: center;
+}
+.name-price-x{
+    width: 230px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.actionItem{
+    padding: 10px;
+}
+
+.navbarProfile{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 50px 150px;
+    margin-left: 100px;
+    border-bottom: 3px solid black;
+    background-color: rgb(173, 171, 171);
+}
+.navbarProfile img{
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+}
+.navbarProfile h1{
+    font-size: 25px;
+    color: #272c46;
+}
+.top{
+    background-color: #505674;
+    color: white;
+    margin-left: 100px;
+    padding: 20px 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.top i{
+    font-size: 30px;
+}
+.story{
+    margin-left: 100px;
+    background-color: rgb(210, 210, 211);
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+.story div img{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 3px solid rgb(223, 41, 117);
+}
+.divide{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgb(191, 191, 192);
+    margin-left: 100px;
+    font-size: 30px;
+    padding-top: 20px;
+}
+.divide i{
+    padding-bottom: 5px;
+    width: 700px;
+    text-align: center;
+    border-bottom: 4px solid black;
+}
+.hakers{
+    margin-left: 100px;
+    display: flex;
+    gap: 1px;
+    flex-wrap: wrap;
+}
+.hakers img{
+    width: 33.28%;
+    height: 250px;
+}

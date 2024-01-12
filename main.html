@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>clothing Store</title>
+    <link rel="stylesheet" href="styleCss/style.css" />
+    <link rel="stylesheet" href="styleCss/styleApi.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css"
+    />
+  </head>
+  <body>
+    <div class="saidbar">
+      <a href="index.html"><i class="fa-solid fa-house" id="iconMain"></i></a>
+      <i class="fa-solid fa-user" id="iconMain"></i>
+      <a href="cartLaptop.html"><i class="fa-solid fa-cart-shopping" id="iconMain"></i></a>
+      <i class="fa-solid fa-gear" id="iconMain"></i>
+    </div>
+    <div class="navbar">
+      <h2>Clothing store</h2>
+      <a href="cartLaptop.html">
+        <div class="cart">
+          <i class="bi bi-cart2"></i>
+          <div class="cartAmount">0</div>
+        </div>
+      </a>
+    </div>
+
+    <div class="box" id="box"></div>
+
+    <div style="position: fixed; bottom: 18px; right: 17px; font-size: 25px">
+      <i class="fa-solid fa-table-list" id="iconChange"></i>
+      <i
+        class="fa-solid fa-address-card"
+        id="iconChange"
+        style="color: gray"
+      ></i>
+    </div>
+
+    <dialog class="dialogEdit">
+      <div style="display: flex;justify-content: space-between;align-items: center;margin-bottom: 10px;">
+        <h2>Edit Item</h2>
+        <h1 class="closeEdit">&times;</h1>
+      </div>
+      <form class="formEdit">
+        <input type="text" name="inpEditImg" class="inpEditImg"><br>
+        <input type="text" name="inpEditName" class="inpEditName"><br>
+        <input type="text" name="inpEditDesc" class="inpEditDesc"><br>
+        <input type="text" name="inpEditPrice" class="inpEditPrice"><br>
+        <button type="submit" class="btnEdit">Save</button>
+      </form>
+    </dialog>
+
+    <script src="async.js/dataLaptop.js"></script>
+    <script src="async.js/main.js"></script>
+  </body>
+</html>
+
+<!-- <dialog class="dialogTable" style="display: block;border: none;margin-left: 200px;">
+            <table class="table">
+                <thead class="thead">
+                    <tr class="trName">Name</tr>
+                    <tr class="trPrice">Price</tr>
+                    <tr class="trDesc">Description</tr>
+                    <tr class="trAction">Action</tr>
+                </thead>
+                <tbody class="tbody"></tbody>
+            </table>
+        </dialog> -->

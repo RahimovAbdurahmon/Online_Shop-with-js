@@ -1,0 +1,273 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+.body{
+    height: 100vh;
+    background-image: linear-gradient(rgb(15, 15, 139) , rgb(29, 27, 48)); 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 50px 350px;
+}
+.body2{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+}
+form{
+    text-align: center;
+    padding: 50px;
+    border-radius: 10px;
+    background-color: white;
+}
+label{
+    margin-top: 30px;
+    font-size: 25px;
+    display: block;
+    margin-bottom: 5px;
+    color: gray;
+    margin-left: -350px;
+}
+output{
+    font-weight: 600;
+    font-size: 50px;
+}
+input{
+    font-size: 25px;
+    width: 550px;
+    display: block;
+    padding: 15px 30px;
+}
+input::placeholder{
+    font-size: 25px;
+}
+.btnLogin{
+    padding: 10px 220px;
+    font-size: 30px;
+    background-color: rgb(13, 13, 165);
+    color: white;
+    border: 1px solid blue;
+    margin-top: 50px;
+    border-radius: 6px;
+    margin-left: -30px;
+}
+.btnLogin:hover{
+    background-color: blue;
+    cursor: pointer;
+}
+.sud{
+    font-size: 18px;
+    color: red;
+}
+
+
+a{
+    text-decoration: none;
+    color: white;
+}
+.navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #212529;
+    color: white;
+    padding: 25px 60px;
+    /* margin-bottom: 30px; */
+    align-items: center;
+    padding-left: 150px;
+}
+.cart{
+    position: relative;
+    background-color: white;
+    color: #212529;
+    padding: 5px;
+    border-radius: 4px;
+    font-size: 30px;
+}
+.cartAmount{
+    font-size: 16px;
+    background-color: red;
+    color: white;
+    position: absolute;
+    top: -15px;
+    right: -10px;
+    padding: 3px;
+    border-radius: 3px;
+}
+.shop{
+    display: grid;
+    grid-template-columns: repeat(4, 223px);
+    gap: 30px;
+    justify-content: center;
+    margin-left: 80px;
+    padding-top: 30px;
+}
+
+@media (max-width : 900px) {
+    .shop{
+        grid-template-columns: repeat(2, 223px);
+    }
+}
+
+@media (max-width : 500px) {
+    .shop{
+        grid-template-columns: repeat(1, 223px);
+    }
+}
+
+.item{
+    border: 2px solid #212529;
+    border-radius: 4px;
+}
+.item img{
+    width: 100%;
+    border-radius: 2px 2px 0 0;
+}
+.details{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    gap: 10px;
+}
+.price-quantity{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.buttons{
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    font-size: 16px;
+    align-items: center;
+}
+.text-center{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.homeBtn,
+.checkout,
+.ramoveAll{
+    padding: 6px;
+    background-color: #212529;
+    color: white;
+    cursor: pointer;
+    border-radius: 3px;
+    border: none;
+    margin-top: 10px;
+    font-size: 16px;
+}
+.shopping-cart{
+    display: grid;
+    grid-template-columns: repeat(1, 320px); 
+    justify-content: center;
+    gap: 20px;
+}
+.cart-item{
+    display: flex;
+    border-radius: 5px;
+    border: 2px solid #212529;
+}
+.title-price-x{
+    width: 195px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.title-price{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.cart-item-price{
+    background-color: #212529;
+    color: white;
+    padding: 3px 6px;
+    border-radius: 4px;
+}
+.checkout{
+    background-color: green;
+}
+.checkout:hover{
+    background-color: rgb(2, 112, 2);
+}
+.ramoveAll{
+    margin-left: 20px;
+    background-color: red;
+}
+.ramoveAll:hover{
+    background-color: rgb(224, 6, 6);
+}
+
+.allButton{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+.dialogAll{
+    border: none;
+    text-align: start;
+    height: 100vh;
+    transition: 1s;
+}
+.btnAcount,
+.btnGroup,
+.btnProfile,
+.btnEditPassword,
+.btnCall,
+.btnSave,
+.btnSetting,
+.btnInfo{
+    text-align: start;
+    padding: 10px 30px;
+    padding-right: 80px;
+    font-size: 18px;
+    border: none;
+    background-color: white;
+}
+.btnAcount:hover,
+.btnGroup:hover,
+.btnProfile:hover,
+.btnEditPassword:hover,
+.btnCall:hover,
+.btnSave:hover,
+.btnSetting:hover,
+.btnInfo:hover{
+    background-color: rgb(212, 211, 211);
+    cursor: pointer;
+}
+.closeDialogAll:hover{
+    color: gray;
+    cursor: pointer;
+}
+.btnDark,
+.btnLight{
+    padding: 3px 10px;
+    font-size: 16px;
+    border: 1px solid black;
+    background-color: white;
+    color: black;
+}
+.btnDark{
+    margin-left: -5px;
+    border-radius: 0 5px 5px 0;
+}
+.btnLight{
+    border-radius: 5px 0 0 5px;
+}
+.btnDark:hover{
+    background-color: rgb(234, 234, 238);
+    cursor: pointer;
+}
+.btnLight:hover{
+    background-color: rgb(234, 234, 238);
+    cursor: pointer;
+}
